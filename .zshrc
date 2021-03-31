@@ -50,6 +50,7 @@ alias llx="lsd -AFh --blocks inode,permission,date,user,name --date=\"+%Y-%m-%dT
 alias llt="lsd -Ahi1lF --total-size"
 alias vim=nvim
 alias fucking="sudo"
+alias gsu="git add . && git commit -S -m \"super urgent\" && git push"
 
 eval $(thefuck --alias)
 
