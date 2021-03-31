@@ -29,6 +29,10 @@ export EDITOR='vim'
 export LANG=en_US.UTF-8
 export AWS_PAGER=""
 
+export TMPDIR=/tmp
+export TEMP=/tmp
+export TMP=/tmp
+
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/miniconda3/bin:$PATH
@@ -41,7 +45,8 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/replicadse/go/bin/bit bit
 
 alias ll2="exa -Fla"
-alias ll="lsd -AFh --blocks inode,date,user,name --date=\"+%Y-%m-%dT%H:%M:%S%Z\""
+alias ll="lsd -AFh --blocks inode,permission,user,name"
+alias llx="lsd -AFh --blocks inode,permission,date,user,name --date=\"+%Y-%m-%dT%H:%M:%S%Z\""
 alias llt="lsd -Ahi1lF --total-size"
 alias vim=nvim
 alias fucking="sudo"
