@@ -9,6 +9,7 @@ set nowritebackup
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
+set list
 
 "## General keybinds
 "### Fuck space
