@@ -28,11 +28,14 @@ export EDITOR='vim'
 
 export LANG=en_US.UTF-8
 export AWS_PAGER=""
+export AWS_VAULT_PASS_PREFIX=aws-vault
+export AWS_VAULT_BACKEND=pass
 
 export TMPDIR=/tmp
 export TEMP=/tmp
 export TMP=/tmp
 
+export PATH=~/.local/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/miniconda3/bin:$PATH
