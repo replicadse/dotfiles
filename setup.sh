@@ -4,6 +4,7 @@ case $1 in
   preinstall)
     touch $HOME/.zshrc_plug || true
     # oh my zsh
+    rm -rf ~/.oh-my-zsh
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     # vim
     rm -rf ~/.vim/* || true
@@ -24,7 +25,7 @@ case $1 in
     git clone https://github.com/sainnhe/sonokai ~/.vim/bundle/monokai
     # cp ~/.vim/bundle/monokai/autoload/ ~/.vim/autoload
     git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
-    git clone https://github.com/neoclide/coc.nvim.git ~/.vim/bundle/coc.nvim
+    git clone https://github.com/neoclide/coc.nvim.git ~/.vim/bundle/coc.nvim --branch release
     git clone https://github.com/HerringtonDarkholme/yats.vim.git ~/.vim/bundle/yats
     git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree
     git clone https://github.com/kshenoy/vim-signature ~/.vim/bundle/vim-signature
@@ -59,5 +60,7 @@ case $1 in
       # Install vim configuration
       ln -h .vimrc $HOME/.vimrc
     fi
+    mkdir -p ~/.config/nvim
+    cp ./init.vim ~/.config/nvim/
     ;;
 esac
