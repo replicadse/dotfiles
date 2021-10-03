@@ -22,7 +22,8 @@ bindkey '^ ' autosuggest-accept # ctrl+space to accept
 
 export FZF_DEFAULT_COMMAND='find .'
 source $ZSH/oh-my-zsh.sh
-export EDITOR='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # user configuration
 
