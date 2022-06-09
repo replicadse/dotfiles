@@ -32,6 +32,8 @@ case $1 in
     git clone https://github.com/junegunn/fzf.git ~/.vim/bundle/fzf
     git clone https://github.com/junegunn/fzf.vim.git ~/.vim/bundle/fzf.vim
     git clone https://github.com/puremourning/vimspector ~/.vim/bundle/vimspector
+    git clone https://github.com/editorconfig/editorconfig-vim ~/.vim/bundle/editorconfig
+    git clone https://github.com/bling/vim-bufferline ~/.vim/bundle/vim-bufferline
     python -m pip install --user --upgrade pynvim
 
     rm -rf ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/* || true

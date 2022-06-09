@@ -84,6 +84,10 @@ nmap <F7> <Plug>VimspectorStepInto
 nmap <C-F8> <Plug> VimspectorRunToCursor
 nmap <F5> <Plug>VimspectorToggleBreakpoint
 
+"# editorconfig
+let g:EditorConfig_exclude_patterns = ['.git/*']
+au FileType gitcommit let b:EditorConfig_disable = 1
+
 "# COC
 
 " Use tab for trigger completion with characters ahead and navigate.
