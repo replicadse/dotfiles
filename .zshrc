@@ -15,7 +15,7 @@ HIST_STAMPS="yyyy-mm-dd"
 ZSH_AUTOSUGGEST_STRATEGY=(history)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#444444,bg=grey,underline"
 
-plugins=(git cargo zsh-autosuggestions jsontools)
+plugins=(git zsh-autosuggestions jsontools)
 
 # autosuggest plugin
 bindkey '^ ' autosuggest-accept # ctrl+space to accept

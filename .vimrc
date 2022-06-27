@@ -65,6 +65,8 @@ nnoremap <C-g> :Rg<cr>
 nnoremap <C-x> :Buffers<cr>
 nnoremap <C-p> :Lines<cr>
 
+nnoremap <C-q> :bd<cr>
+
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --hidden --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
