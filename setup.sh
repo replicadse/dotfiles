@@ -64,5 +64,9 @@ case $1 in
     fi
     mkdir -p ~/.config/nvim
     cp ./init.vim ~/.config/nvim/
+
+    rm $HOME/.doom.d || true
+    mkdir -p $HOME/.doom.d
+    $HOME/.emacs.d/bin/doom sync
     ;;
 esac
