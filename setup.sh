@@ -48,6 +48,7 @@ case $1 in
     rm $HOME/.p10k.zsh || true
     rm $HOME/.tmux.conf || true
     rm $HOME/.vimrc || true
+    rm $HOME/.doom.d/* || true
     if [[ "$OSTYPE" == "linux-gnu"* ]]; then 
       # Install zsh configuration
       ln -P .zshrc $HOME/.zshrc
