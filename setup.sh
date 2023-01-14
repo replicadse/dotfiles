@@ -56,6 +56,10 @@ case $1 in
       ln -P .tmux.conf $HOME/.tmux.conf
       # Install vim configuration
       ln -P .vimrc $HOME/.vimrc
+
+      ln -P ./doom/config.el $HOME/.doom.d/config.el
+      ln -P ./doom/packages.el $HOME/.doom.d/packages.el
+      ln -P ./doom/init.el $HOME/.doom.d/init.el
     elif [[ "$OSTYPE" == "darwin"* ]]; then
       # Install zsh configuration
       ln -h .zshrc $HOME/.zshrc
@@ -64,6 +68,10 @@ case $1 in
       ln -h .tmux.conf $HOME/.tmux.conf
       # Install vim configuration
       ln -h .vimrc $HOME/.vimrc
+
+      ln -h ./doom/config.el $HOME/.doom.d/config.el
+      ln -h ./doom/packages.el $HOME/.doom.d/packages.el
+      ln -h ./doom/init.el $HOME/.doom.d/init.el
     fi
     mkdir -p ~/.config/nvim
     cp ./init.vim ~/.config/nvim/
